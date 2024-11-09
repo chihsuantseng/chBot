@@ -1,27 +1,4 @@
 {
-    "destination": "U9d11ad597f964774d6b252fabe32c9e1",
-    "events": [
-      {
-        "type": "message",
-        "message": {
-          "type": "text",
-          "id": "534012996452614209",
-          "quoteToken": "d7xCOaLhz9Ug0f1V03vtoQr4vmY_BeAlGNVl9K1uXCwbU-x1KPdtnHFarg_K9Qr-GOcSiQWJuLM3nrYTUUhFcMLjkOWQxqT3XL2oDOLxRWGocZEZsIeTA0gECgJb8LySGrdZoi7bjL0G0ZFME8KKHg",
-          "text": "abc"
-        },
-        "webhookEventId": "01JC7M5GYJ95Q1XJ9T64BH0K6E",
-        "deliveryContext": {
-          "isRedelivery": false
-        },
-        "timestamp": 1731127853599,
-        "source": {
-          "type": "user",
-          "userId": "U3233a7d8510d5822ead308c660e4d5c3"
-        },
-        "replyToken": "78aa11b21adc4799abad7e64fa817222",
-        "mode": "active"
-      }
-    ],
     "abc": "LineBot自動回覆中",
     "你好": "你好！很高興認識你，可以如何幫助你呢？",
     "哈囉": "你好！很高興認識你，可以如何幫助你呢？",
