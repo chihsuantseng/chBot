@@ -1,0 +1,45 @@
+{
+    "destination": "U9d11ad597f964774d6b252fabe32c9e1",
+    "events": [
+      {
+        "type": "message",
+        "message": {
+          "type": "text",
+          "id": "534012996452614209",
+          "quoteToken": "d7xCOaLhz9Ug0f1V03vtoQr4vmY_BeAlGNVl9K1uXCwbU-x1KPdtnHFarg_K9Qr-GOcSiQWJuLM3nrYTUUhFcMLjkOWQxqT3XL2oDOLxRWGocZEZsIeTA0gECgJb8LySGrdZoi7bjL0G0ZFME8KKHg",
+          "text": "abc"
+        },
+        "webhookEventId": "01JC7M5GYJ95Q1XJ9T64BH0K6E",
+        "deliveryContext": {
+          "isRedelivery": false
+        },
+        "timestamp": 1731127853599,
+        "source": {
+          "type": "user",
+          "userId": "U3233a7d8510d5822ead308c660e4d5c3"
+        },
+        "replyToken": "78aa11b21adc4799abad7e64fa817222",
+        "mode": "active"
+      }
+    ],
+    "abc": "LineBot自動回覆中",
+    "你好": "你好！很高興認識你，可以如何幫助你呢？",
+    "哈囉": "你好！很高興認識你，可以如何幫助你呢？",
+    "珍奶": "哇!珍奶很好喝，喝了會很開心！",
+    "休閒活動":"聽起來很有趣耶！",
+    "程式":"你很有學習的動力！",
+    "音樂":"很美妙的音樂",
+    "慢跑":"慢跑有益身心健康",
+    "飲料店":"50嵐、先喝道、迷克夏、沐沐",
+    "動物":"我最喜歡貓咪了",
+    "貓咪":"貓咪是很可愛的動物，可以療癒人們！",
+    "狗狗":"狗狗是人類最忠心的朋友",
+    "聊天":"好呀！想聊什麼呢？",
+    "彩虹":"彩虹是七彩顏色",
+    "皮卡丘":"十萬伏特",
+    "哆啦A夢":"是22世紀的貓咪機器人",
+    "駕照":"我有機車駕照",
+    "保健食品":"B群、魚油、鈣鎂",
+    "哈哈":"哈哈！好好笑喔！"
+  }
+  
