@@ -9,7 +9,7 @@
     "routes": [
         {
           "src": "/callback", 
-          "dest": "app.py"
+          "dest": "/app.py"
         }
     ]
 }
