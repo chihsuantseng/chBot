@@ -79,7 +79,7 @@ def handle_message(event):
                     )
             )   
             matched = True
-            break
+            
     if not matched:
             with ApiClient(configuration) as api_client:
                 line_bot_api = MessagingApi(api_client)
