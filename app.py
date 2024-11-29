@@ -65,30 +65,28 @@ def handle_follow(event):
 def handle_message(event):
     user_message = event.message.text
 
-    # 檢查用戶輸入是否匹配某個關鍵字
-    matched = False
-    # 檢查用戶輸入是否匹配某個關鍵字
-    for keyword, response in response_dict.items():
-        if keyword in user_message:
-            with ApiClient(configuration) as api_client:
-                line_bot_api = MessagingApi(api_client)
-                line_bot_api.reply_message_with_http_info(
-                    ReplyMessageRequest(
-                        reply_token=event.reply_token,
-                        messages=[TextMessage(text=response)]
-                    )
-            )   
-            matched = True
+   # 收集所有匹配的回應
+    matched_responses = [response for keyword, response in response_dict.items() if keyword in user_message]
+
+    with ApiClient(configuration) as api_client:
+        line_bot_api = MessagingApi(api_client)
+
+        if matched_responses:
+            # 如果有匹配，將所有結果顯示
+            messages = [TextMessage(text=response) for response in matched_responses]
+        else:
+            # 沒有匹配時顯示預設訊息
+            messages = [TextMessage(text="LineBot自動回覆中")]
+
+        # 傳送回覆
+        line_bot_api.reply_message_with_http_info(
+            ReplyMessageRequest(
+                reply_token=event.reply_token,
+                messages=messages
+            )
+        )
             
-    if not matched:
-            with ApiClient(configuration) as api_client:
-                line_bot_api = MessagingApi(api_client)
-                line_bot_api.reply_message_with_http_info(
-                    ReplyMessageRequest(
-                        reply_token=event.reply_token,
-                        messages=[TextMessage(text="LineBot自動回覆中")]
-                    )
-            )   
+    
 
 
 
