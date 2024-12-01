@@ -76,7 +76,7 @@ def handle_message(event):
             messages = [TextMessage(text=response) for response in matched_responses]
         else:
             # 沒有匹配時顯示預設訊息
-            messages = [TextMessage(text="LineBot自動回覆中")]
+            messages = [TextMessage(text="自動回覆中")]
 
         # 傳送回覆
         line_bot_api.reply_message_with_http_info(
