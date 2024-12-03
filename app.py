@@ -88,53 +88,6 @@ def handle_message(event):
             
     
 
-
-
-
-# # 訊息事件
-# @handler.add(MessageEvent, message=TextMessageContent)
-# def handle_message(event):
-#     with ApiClient(configuration) as api_client:
-#         line_bot_api = MessagingApi(api_client)
-#         user_message = event.message.text
-#         if event.message.text == 'postback':
-#             buttons_template = ButtonsTemplate(
-#                 title='Postback Sample',
-#                 text='Postback 開始',
-#                 actions=[
-#                     PostbackAction(label='Postback Action', text='Postback Action Button Clicked!', data='postback'),
-#                 ])
-#             template_message = TemplateMessage(
-#                 alt_text='Postback Sample',
-#                 template=buttons_template
-#             )
-#             line_bot_api.reply_message(
-#                 ReplyMessageRequest(
-#                     reply_token=event.reply_token,
-#                     messages=[template_message]
-#                 )
-#             )
-#         elif event.message.text == 'abc':
-#             line_bot_api.reply_message_with_http_info(
-#             ReplyMessageRequest(
-#                 reply_token=event.reply_token,
-#                 messages=[TextMessage(text='LineBot自動回覆中')]
-#             )
-#             )
-#         elif '你好' in user_message or '哈囉' in user_message:
-#             line_bot_api.reply_message_with_http_info(
-#             ReplyMessageRequest(
-#                 reply_token=event.reply_token,
-#                 messages=[TextMessage(text="你好！很高興認識你，可以如何幫助你呢？")]
-#             )
-#             )
-#         elif '珍奶' in user_message or '飲料' in user_message:
-#             line_bot_api.reply_message_with_http_info(
-#             ReplyMessageRequest(
-#                 reply_token=event.reply_token,
-#                 messages=[TextMessage(text="哇!好喝，一定很愉悅！")]
-#             )
-#             )
         
 @line_handler.add(PostbackEvent)
 def handle_postback(event):
